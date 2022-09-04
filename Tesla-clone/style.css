@@ -8,17 +8,19 @@
     font-size: 14px;
     font-weight: 500;
   }
-  /* so cool */
 
   h1 {
     font-size: 40px;
     font-weight: 500;
+    color: #191d21;
+    
   }
 
  p {
     font-size: 14px;
     font-weight: 400;
     padding: 6px 24px 16px 24px;
+    color: #191d21;
   }
   
 .banner-wrap {
@@ -28,7 +30,7 @@
     background-position: center;
     height: 100vh;
     width: 100vw;
-    /* so cool (all of the above */
+
 }
 
 nav {
@@ -41,7 +43,7 @@ nav {
 .nav-item {
     padding: 5px 15px;
     cursor: pointer;
-    /* so cool */
+    
 }
 .nav-item:hover {
     background-color: #d8d9da;
@@ -53,19 +55,19 @@ nav {
 .logo {
     height: 24px;
     width: 120px;
+    cursor: pointer;
 }
 
 
 main {
     text-align: center;
     height: calc(100vh - 56px);
-    /* so cool */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .title-section {
-    margin-top: calc(155px - 56px);
+    margin-top: calc(114px - 56px);
 }
 .actions-area {
     margin-bottom: 100px;
@@ -88,7 +90,7 @@ button {
 }
 
 .btn-dark {
-    background-color: #34373c;
+    background-color: #191d21;
     color: white;
 }
 
@@ -96,3 +98,26 @@ button {
     background-color: #e4e4e2 ;
     color: #393c41;
 }
+
+.btn-dark:hover{
+    color: #fff;
+}
+
+.btn-light:hover{
+    color:#191d21;
+}
+
+.tds-link {
+    --tds-link--icon-margin: calc((var(--tds-icon--size) + var(--tds-size--half))*-1);
+    background-color: transparent;
+    border: 0;
+    box-shadow: 0 var(--tds-border-width--small) 0 0 currentColor;
+    color: var(--tds-theme-foreground);
+    cursor: pointer;
+    font-family: var(--tds-font-family--combined);
+    padding: 0;
+    position: relative;
+    text-align: initial;
+    transition: box-shadow .33s var(--tds-bezier),color .33s ease;
+}
+
